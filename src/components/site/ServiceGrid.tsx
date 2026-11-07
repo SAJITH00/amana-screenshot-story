@@ -10,7 +10,7 @@ export function ServiceGrid({ slugs }: { slugs?: string[] }) {
   return (
     <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
       {list.map((s, i) => {
-        const Icon = icons[SERVICES.indexOf(s)];
+        const Icon = icons[SERVICES.indexOf(s)] ?? PiggyBank;
         return (
           <Reveal key={s.slug} delay={(i % 3) * 80}>
             <Link to="/services/$slug" params={{ slug: s.slug }} className="card-lift group flex h-full flex-col rounded-3xl border border-border bg-card p-7">

@@ -107,7 +107,7 @@ function Home() {
               { title: "Best Laid Developer's LLP", text: "Business development activities structured as a Limited Liability Partnership with clearly defined partner roles." },
               { title: "Best Laid Chits Limited", text: "Chit fund services — a disciplined, community-based way to save through transparent monthly auctions." },
             ].map((d, i) => {
-              const Icon = divisionIcons[i];
+              const Icon = divisionIcons[i] ?? Landmark;
               return (
                 <Reveal key={d.title} delay={i * 100} className="card-lift overflow-hidden rounded-3xl bg-card shadow-soft">
                   <img src={divisionImgs[i]} alt={d.title} loading="lazy" className="h-48 w-full object-cover" />
