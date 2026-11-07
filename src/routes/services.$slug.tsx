@@ -42,7 +42,7 @@ function ServiceDetail() {
             <div className="rounded-3xl bg-gradient-primary p-7 text-primary-foreground shadow-lift">
               <h3 className="text-xl font-bold">Talk to our team</h3>
               <p className="mt-2 text-sm text-primary-foreground/80">Get accurate, up-to-date information about {service.title}.</p>
-              <a href={telHref(HEAD_OFFICE.phones[1])} className="btn mt-5 w-full bg-background text-primary"><Phone size={16} /> {HEAD_OFFICE.phones[1]}</a>
+              <a href={telHref(HEAD_OFFICE.phones[1]!)} className="btn mt-5 w-full bg-background text-primary"><Phone size={16} /> {HEAD_OFFICE.phones[1]}</a>
               <Link to="/contact" className="btn mt-3 w-full border border-primary-foreground/40">Send an enquiry</Link>
             </div>
             <div className="rounded-3xl border border-border p-6">

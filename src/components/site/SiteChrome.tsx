@@ -89,7 +89,7 @@ export function SiteFooter() {
             <MapPin size={18} className="mt-0.5 shrink-0 text-lilac" />
             <span>{HEAD_OFFICE.address}</span>
           </div>
-          <a href={telHref(HEAD_OFFICE.phones[0])} className="mt-3 flex items-center gap-3 text-sm text-ink-foreground/80 hover:text-lilac">
+          <a href={telHref(HEAD_OFFICE.phones[0]!)} className="mt-3 flex items-center gap-3 text-sm text-ink-foreground/80 hover:text-lilac">
             <Phone size={18} className="text-lilac" /> {HEAD_OFFICE.phones[0]}
           </a>
           <div className="mt-6 flex gap-3">
